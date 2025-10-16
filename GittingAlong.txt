@@ -1,0 +1,49 @@
+// create new directory
+mkdir GitLab
+mv labtask-06-mab870 GitLab/ 
+cd GitLab
+
+// create repository within directory and add helloworld
+git init
+git add HelloWorld.c
+git commit -m "Add HelloWorld.c"
+git push
+
+// link git and github repositories
+git remote add origin https://github.com/mab870/CSC322-GitLab.git
+git branch -M main
+git push -u origin main
+
+// edit helloworld to "Hello Crool World!" 
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Update HelloWorld.c to Hello Crool World!"
+git push
+
+// create the "Happy" branch and edit helloworld to "Hello Happy World!"
+git branch Happy
+git checkout Happy
+git push -u origin Happy
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Update HelloWorld.c to Hello Happy World!"
+git push
+
+// switch to main branch and edit helloworld to "Hello Very Crool World!"
+git checkout main
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Update HelloWorld.c to Hello Very Crool World!"
+git push
+
+// merge happy and main branch to create "Hello Very Happy World!"
+git merge Happy 
+git add HelloWorld.c
+git commit -m "Merge Happy branch into main with Hello Very Happy World!"
+git push
+
+// edit helloworld to "Hello Crazy World"
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Update HelloWorld.c to Hello Crazy World"
+git push

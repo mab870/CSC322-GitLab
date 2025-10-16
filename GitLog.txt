@@ -1,0 +1,8 @@
+* dd77edb (HEAD -> main, origin/main) Update HelloWorld.c to Hello Crazy World
+*   5225aaf Merge Happy Branch into Main with Hello Very Happy World
+|\  
+| * ef73e7a (origin/Happy, Happy) Updated Helloworld.c to Hello Happy World
+* | 1b3e324 Updated HelloWorld.c to Hello Very Crool World
+|/  
+* 8a1fa9b Updated HelloWorld.c to say Hello Crool World
+* 7cf2702 Add HelloWorld.c
